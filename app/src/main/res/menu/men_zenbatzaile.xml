@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hizkuntza"
+        android:enabled="true"
+        android:icon="@drawable/hizk"
+        android:title="@string/hizk"/>
+    <item
+        android:id="@+id/taula"
+        android:enabled="true"
+        android:icon="@drawable/zerrenda"
+        android:title="@string/zerrenda"/>
+    <item
+        android:id="@+id/datuak"
+        android:enabled="true"
+        android:icon="@drawable/pertsona"
+        android:title="@string/datuak"/>
+</menu>

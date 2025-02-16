@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atze_logo"
+    tools:context="com.labsindikatua.fitxatu.AktZenbatzaile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/goibarra"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gorri"
+        android:elevation="4dp"
+        android:theme="@style/ToolbarEstiloa"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:contentDescription="@string/izen_logo"
+            android:src="@drawable/logo_txiki_zuri" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/goi_test"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/zuria"
+            app:fontFamily="@font/fjallaone_family"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goibarra"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/gpsIrudi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/gps_logo"
+            android:src="@drawable/gps_ez" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="GPS"
+            app:fontFamily="@font/fjallaone_family"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="63dp"
+        android:text="00:00:00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        app:fontFamily="@font/fjallaone_family" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bothasi"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botoi_borobil"
+            android:layout_marginBottom="30dp"
+            android:text="@string/hasi"
+            app:fontFamily="@font/fjallaone_family"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chekjai"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:theme="@style/CheckBox"
+        android:text="@string/jai_eguna"
+        app:fontFamily="@font/fjallaone_family"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botesku"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chekjai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/botoi_borobil"
+        android:text="@string/eskuz"
+        app:fontFamily="@font/fjallaone_family"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+</RelativeLayout>

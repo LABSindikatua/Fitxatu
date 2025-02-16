@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atze_logo"
+    tools:context=".AktEskuz">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/goibarra"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gorri"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/eguna"
+        android:id="@+id/textData"
+        app:fontFamily="@font/fjallaone_family"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/editData"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textData"
+        android:layout_centerHorizontal="true"
+        app:fontFamily="@font/fjallaone_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:inputType="date" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/editData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="30dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textsartu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sartu"
+                app:fontFamily="@font/fjallaone_family"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/editsartu"
+                android:layout_width="wrap_content"
+                android:text="08:00"
+                app:fontFamily="@font/fjallaone_family"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fjallaone_family"
+                android:text="@string/atera"
+                android:id="@+id/textatera"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/editatera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fjallaone_family"
+                android:text="15:00"
+                android:textSize="40sp"
+                android:inputType="time" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chekjai"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:theme="@style/CheckBox"
+        android:text="@string/jai_eguna"
+        app:fontFamily="@font/fjallaone_family"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botgord"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chekjai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/botoi_borobil"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/gorde"
+        app:fontFamily="@font/fjallaone_family"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+</RelativeLayout>

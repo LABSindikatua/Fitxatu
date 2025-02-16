@@ -1,0 +1,102 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Fitxatu" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="checkboxStyle">@style/CheckBox</item>
+        <item name="colorPrimaryDark">@color/gorri</item>
+        <item name="android:navigationBarColor">@color/gorri</item>
+        <item name="alertDialogTheme">@style/AlertDialog</item>
+        <item name="popupMenuBackground">@color/zuria</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerraDrop</item>
+        <item name="android:spinnerStyle">@style/Spinnerra</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="editTextStyle">@style/EditText</item>
+    </style>
+
+    <style name="Theme.Fitxatu" parent="Base.Theme.Fitxatu" />
+
+    <style name="DialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorAccent">@color/beltza</item>
+        <item name="colorPrimary">@color/beltza</item>
+    </style>
+
+    <style name="TextView" parent="android:Widget.Holo.TextView">
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+    </style>
+
+    <style name="Button" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+    </style>
+
+    <style name="CheckBox" parent="android:Widget.Material.CompoundButton.CheckBox">
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+        <item name="colorAccent">@color/beltza</item>
+    </style>
+
+    <style name="Spinnerra" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/beltza</item>
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+        <item name="android:popupBackground">@color/zuria</item>
+    </style>
+
+    <style name="SpinnerraDrop" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:textColor">@color/beltza</item>
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+    </style>
+
+    <style name="SpinnerItem" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="EditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/beltza</item>
+    </style>
+
+    <style name="FjallaoneToobar">
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/zuria</item>
+    </style>
+
+    <style name="ToolbarEstiloa">
+        <item name="colorControlNormal">@color/zuria</item>
+    </style>
+
+    <style name="TableRowIzenburu">
+        <item name="android:background">@color/beltza</item>
+        <item name="android:textColor">@color/zuria</item>
+    </style>
+
+    <style name="TableRowOrokor">
+        <item name="android:background">@color/zuria</item>
+        <item name="android:textColor">@color/beltza</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/EzBotoia</item>
+        <item name="buttonBarPositiveButtonStyle">@style/BaiBotoia</item>
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+        <item name="android:textColor">@color/beltza</item>
+        <item name="android:textAppearanceSmall">@style/DialogTestua</item>
+        <item name="android:textAppearanceMedium">@style/DialogTestua</item>
+        <item name="android:textAppearanceLarge">@style/DialogTestua</item>
+        <item name="android:textAppearance">@style/DialogTestuMezu</item>
+    </style>
+
+    <style name="EzBotoia" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/beltza</item>
+    </style>
+
+    <style name="BaiBotoia" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/beltza</item>
+    </style>
+
+    <style name="DialogTestua" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/fjallaone_family</item>
+    </style>
+
+    <style name="DialogTestuMezu" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/beltza</item>
+    </style>
+</resources>
